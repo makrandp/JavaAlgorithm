@@ -3,6 +3,7 @@ package com.java.algothrim.String;
 import java.util.HashMap;
 import java.util.Stack;
 
+//https://leetcode.com/problems/valid-parentheses/solution/
 public class validParentheses {
 
     private HashMap<Character, Character> mappings;

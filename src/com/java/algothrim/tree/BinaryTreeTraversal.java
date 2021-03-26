@@ -51,34 +51,31 @@ public class BinaryTreeTraversal {
     }
 
 
-    public List<List<Integer>> levelOrder(TreeNode root) {
-        List<List<Integer>> levels = new ArrayList<List<Integer>>();
-        if (root == null) return levels;
 
+    void printLevelOrder(TreeNode root)
+    {
         Queue<TreeNode> queue = new LinkedList<TreeNode>();
         queue.add(root);
-        int level = 0;
-        while ( !queue.isEmpty() ) {
-            // start the current level
-            levels.add(new ArrayList<Integer>());
+        while (!queue.isEmpty())
+        {
 
-            // number of elements in the current level
-            int level_length = queue.size();
-            for(int i = 0; i < level_length; ++i) {
-                TreeNode node = queue.remove();
+            /* poll() removes the present head.
+            For more information on poll() visit
+            http://www.tutorialspoint.com/java/
+            util/linkedlist_poll.htm */
+            TreeNode tempNode = queue.poll();
+            System.out.print(tempNode.val + " ");
 
-                // fulfill the current level
-                levels.get(level).add(node.val);
-
-                // add child nodes of the current level
-                // in the queue for the next level
-                if (node.left != null) queue.add(node.left);
-                if (node.right != null) queue.add(node.right);
+            /*Enqueue left child */
+            if (tempNode.left != null) {
+                queue.add(tempNode.left);
             }
-            // go to next level
-            level++;
+
+            /*Enqueue right child */
+            if (tempNode.right != null) {
+                queue.add(tempNode.right);
+            }
         }
-        return levels;
     }
 
 
