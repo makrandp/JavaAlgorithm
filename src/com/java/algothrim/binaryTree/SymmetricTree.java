@@ -1,4 +1,4 @@
-package com.java.algothrim.tree;
+package com.java.algothrim.binaryTree;
 
 public class SymmetricTree {
 

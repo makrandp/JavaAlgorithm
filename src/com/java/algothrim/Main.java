@@ -1,28 +1,13 @@
 package com.java.algothrim;
 
-import com.java.algothrim.Int.CountPrimes;
-import com.java.algothrim.Int.ReverseInteger;
-import com.java.algothrim.LinkList.ListNode;
-import com.java.algothrim.LinkList.ReverseList;
-import com.java.algothrim.List.MissingRanges;
-import com.java.algothrim.String.CountVally;
-import com.java.algothrim.String.ExcelSheetColumnNumber;
-import com.java.algothrim.String.RepeatedString;
-import com.java.algothrim.String.ValidAnagram;
-import com.java.algothrim.array.*;
-import com.java.algothrim.dynamicPrograming.fibonacci.Fibonacci;
-import com.java.algothrim.dynamicPrograming.fibonacci.MaximumSubarray;
-import com.java.algothrim.map.TwoStrings;
-import com.java.algothrim.simple.FizzBuzz;
-import com.java.algothrim.simple.HappyNumber;
-import com.java.algothrim.simple.NumberOf1Bits;
+import com.java.algothrim.array.ProductofArrayExceptSelf;
+import com.java.algothrim.backTracking.GenerateParentheses;
+import com.java.algothrim.backTracking.Subsets;
+import com.java.algothrim.binaryTree.KthSmallestElementinaBST;
+import com.java.algothrim.binaryTree.TreeNode;
+import com.java.algothrim.dimensionArray.RotateImage;
 
-import java.lang.reflect.Array;
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
-
-import static com.java.algothrim.array.ArrayContains.contain;
 
 public class Main {
 
@@ -40,10 +25,8 @@ public class Main {
 //        ReverseString.reverseString(new char[]{'h', 'e', 'l', 'l', 'o'});
 //        ReverseString.reverseString(new char[]{'H','a','n','n','a','h'});
 //
-//        ListNode one = new ListNode(1);
-//        ListNode two = new ListNode(2);
-//        ListNode three = new ListNode(3);
-//        ListNode four = new ListNode(4);
+
+
 //
 //        one.next = two;
 //        two.next = three;
@@ -109,9 +92,37 @@ public class Main {
 //        System.out.println(MissingRanges.findMissingRanges(new int[]{-1},-1,-1));
 //        System.out.println(MissingRanges.findMissingRanges(new int[]{0,1,3,50,75},0,99));
 
-        System.out.println(ReverseInteger.reverse(-123));
+//        System.out.println(ReverseInteger.reverse(-123));
 
+//        System.out.println(Permutations.permute(new int[]{1,2,3}));
+//        System.out.println(GenerateParentheses.generateParenthesisBackTracking(3));
 
+//        System.out.println(Subsets.subsets1(new int[]{1,2,3,4}));
+
+//        TreeNode root = new TreeNode(1);
+//        root.left = new TreeNode(2);
+//        root.right = new TreeNode(3);
+//        root.left.left = new TreeNode(4);
+//        root.left.right = new TreeNode(5);
+//
+//        System.out.println(KthSmallestElementinaBST.kthSmallest(root,1));
+
+//        System.out.println(Arrays.toString(ProductofArrayExceptSelf.productExceptSelf(new int[]{1,2,3,4})));
+
+        int[][] matrix = {{1,2,3},{4,5,6},{7,8,9}};
+        RotateImage.rotate(matrix);
+        System.out.println(Arrays.deepToString(matrix));
+
+//        int k = 4;
+//        for(int i = 0 ; i < (k + 1) / 2 ; i ++){
+//            for(int j = 0; j < k  / 2 ; j ++ ){
+//                System.out.println("i " + i);
+//                System.out.println("j " + j);
+//                System.out.println();
+//
+//
+//            }
+//        }
     }
 
 

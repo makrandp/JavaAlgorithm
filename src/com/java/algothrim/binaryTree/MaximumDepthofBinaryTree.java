@@ -1,4 +1,4 @@
-package com.java.algothrim.tree;
+package com.java.algothrim.binaryTree;
 
 //https://leetcode.com/problems/maximum-depth-of-binary-tree/
 public class MaximumDepthofBinaryTree {

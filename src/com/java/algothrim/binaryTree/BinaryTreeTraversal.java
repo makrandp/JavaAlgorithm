@@ -1,8 +1,6 @@
-package com.java.algothrim.tree;
+package com.java.algothrim.binaryTree;
 
-import java.util.ArrayList;
 import java.util.LinkedList;
-import java.util.List;
 import java.util.Queue;
 
 public class BinaryTreeTraversal {
@@ -74,6 +72,47 @@ public class BinaryTreeTraversal {
             /*Enqueue right child */
             if (tempNode.right != null) {
                 queue.add(tempNode.right);
+            }
+        }
+    }
+
+    // Prints level order traversal line
+    // by line using queue.
+    static void levelOrder(TreeNode root) {
+        if (root == null)
+            return;
+
+        Queue<TreeNode> q = new LinkedList<>();
+
+        // Pushing root node into the queue.
+        q.add(root);
+
+        // Pushing delimiter into the queue.
+        q.add(null);
+
+        // Executing loop till queue becomes
+        // empty
+        while (!q.isEmpty()) {
+
+            TreeNode curr = q.poll();
+
+            // condition to check the
+            // occurence of next level
+            if (curr == null) {
+                if (!q.isEmpty()) {
+                    q.add(null);
+                    System.out.println();
+                }
+            } else {
+                // Pushing left child current node
+                if (curr.left != null)
+                    q.add(curr.left);
+
+                // Pushing right child current node
+                if (curr.right != null)
+                    q.add(curr.right);
+
+                System.out.print(curr.val + " ");
             }
         }
     }

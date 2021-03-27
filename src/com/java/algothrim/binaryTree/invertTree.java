@@ -1,4 +1,4 @@
-package com.java.algothrim.tree;
+package com.java.algothrim.binaryTree;
 
 
 //https://leetcode.com/problems/invert-binary-tree/
