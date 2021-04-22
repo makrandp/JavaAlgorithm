@@ -9,8 +9,7 @@ public class TopKFrequentElements {
     public int[] topKFrequent(int[] nums, int k) {
         Map<Integer, Integer> resultMap = new HashMap<>();
 
-        for (int i :
-                nums) {
+        for (int i : nums) {
             resultMap.put(i, resultMap.getOrDefault(i, 0) + 1);
         }
 
