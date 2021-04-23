@@ -1,14 +1,12 @@
 package com.java.algothrim.array;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
+//https://leetcode.com/problems/intersection-of-two-arrays/
 public class IntersectionofTwoArrays {
-    public static int[] intersect(int[] nums1, int[] nums2) {
+    public static int[] intersection(int[] nums1, int[] nums2) {
         if(nums1.length > nums2.length){
-            return intersect(nums2,nums1);
+            return intersection(nums2,nums1);
         }
 
         Map<Integer,Integer> map = new HashMap();
@@ -16,7 +14,7 @@ public class IntersectionofTwoArrays {
             map.put(i,map.getOrDefault(i,0)+1);
         }
 
-        List<Integer> list = new ArrayList();
+        Set<Integer> list = new HashSet<>();
         for (int num:nums2) {
             if(map.containsKey(num) && map.get(num)> 0){
                 list.add(num);
