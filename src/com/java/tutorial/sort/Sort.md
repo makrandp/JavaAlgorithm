@@ -116,3 +116,12 @@
   * Best : O(n+k)
   * Worst : depends on the individual sorting algorithms worse case
   * Average : O(n)
+
+# InsertionSort
+* [InsertionSort.java](InsertionSort.java)
+* [Video](https://www.youtube.com/watch?time_continue=32&v=OGzPmgsI-pQ&feature=emb_logo)
+* ![Alt text](../asset/sort/insertionsort.png "Title")
+* We can use binary search to reduce the number of comparisons in normal insertion sort. Binary Insertion Sort uses binary search to find the proper location to insert the selected item at each iteration. In normal insertion, sorting takes O(i) (at ith iteration) in worst case. We can reduce it to O(logi) by using binary search.
+* Time Complexity: O(nlog(n))
+*  Auxiliary Space: O(1)
+
