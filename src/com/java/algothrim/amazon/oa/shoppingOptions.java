@@ -1,4 +1,7 @@
-package com.java.algothrim.amazon;
+package com.java.algothrim.amazon.oa;
+
+import java.util.Arrays;
+import java.util.List;
 
 public class shoppingOptions {
 
@@ -32,4 +35,29 @@ public class shoppingOptions {
     1 ≤ price of each item ≤ 109
     Note: a, b, c and d are the sizes of the four price arrays
      */
+
+    //https://leetcode.com/discuss/interview-question/1128534/amazon-oa-2021
+    public static int solve(int[] a, int[] b, int[] c, int[] d, int k) {
+        List<int[]> lst = Arrays.asList(a,b,c,d);
+        int[][] dp = new int[lst.size()][k + 1];
+        int res = 0;
+        for(int i=0;i<lst.size();i++) {
+            for(int p : lst.get(i)) {
+                if(i == 0) {
+                    dp[0][p] = 1;
+                }else {
+                    for(int l=0;l<=k;l++) {
+                        if(dp[i-1][l] > 0 && l + p <= k) {
+                            dp[i][l+p] += dp[i-1][l];
+                        }
+                    }
+                }
+            }
+        }
+        for(int i=0;i<dp[0].length;i++) {
+            res += dp[dp.length - 1][i];
+        }
+        return res;
+    }
+
 }

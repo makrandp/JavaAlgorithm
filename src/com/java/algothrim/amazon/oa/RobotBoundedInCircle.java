@@ -1,4 +1,4 @@
-package com.java.algothrim.amazon;
+package com.java.algothrim.amazon.oa;
 
 public class RobotBoundedInCircle {
 

@@ -1,29 +1,9 @@
 package com.java.algothrim;
 
-import com.java.algothrim.LinkList.CopyListwithRandomPointer;
-import com.java.algothrim.LinkList.ListNode;
-import com.java.algothrim.LinkList.OddEvenLinkedList;
-import com.java.algothrim.LinkList.RandomNode;
-import com.java.algothrim.String.BasicCalculatorII;
-import com.java.algothrim.String.PalindromePartitioning;
-import com.java.algothrim.String.RearrangeSpacesBetweenWords;
-import com.java.algothrim.array.*;
-import com.java.algothrim.backTracking.AllValidPermutationsOfParenthesesI;
-import com.java.algothrim.backTracking.CombinationsOfCoins;
-import com.java.algothrim.backTracking.LetterCombinationsPhoneNumber;
-import com.java.algothrim.backTracking.LongestSubstringwithAtLeastKRepeatingCharacters;
-import com.java.algothrim.binaryTree.*;
-import com.java.algothrim.dynamicPrograming.fibonacci.HouseRobber;
-import com.java.algothrim.dynamicPrograming.fibonacci.UniquePath;
-import com.java.algothrim.dynamicPrograming.fibonacci.WordBreak;
-import com.java.algothrim.heap.KthSmallestElementInSortedMatrix;
-import com.java.algothrim.objectDesign.ShuffleAnArray;
-import com.java.algothrim.objectDesign.TicTacToe;
-import com.java.algothrim.search.FourSum;
-import com.sun.source.tree.Tree;
-
-import java.util.Arrays;
-import java.util.List;
+import com.java.algothrim.amazon.oa.*;
+import com.java.algothrim.amazon.oa.OA1.eliminateVowel;
+import com.java.algothrim.amazon.oa.OA2.Turnstile;
+import com.java.algothrim.amazon.oa.OA2.utilization;
 
 public class Main {
 
@@ -317,7 +297,89 @@ public class Main {
 //        CombinationsOfCoins c = new CombinationsOfCoins();
 //        System.out.println(c.combinations( 4,new int[]{2, 1}));
 
-        RearrangeSpacesBetweenWords r = new RearrangeSpacesBetweenWords();
-        System.out.println(r.remove("abcd","ab"));
+//        RearrangeSpacesBetweenWords r = new RearrangeSpacesBetweenWords();
+//        System.out.println(r.remove("abcd","ab"));
+
+//        RemoveAllAdjacentDuplicatesInString r = new RemoveAllAdjacentDuplicatesInString();
+//        System.out.println(r.removeDuplicatesSolution1("abbaca"));
+
+//        IntersectionofTwoArraysII i = new IntersectionofTwoArraysII();
+//        System.out.println(Arrays.toString(i.intersect(new int[]{0,5,8,7,2,9,7,5}, new int[]{1,4,8,9})));
+
+//        RemoveAllAdjacentDuplicatesinStringII r = new RemoveAllAdjacentDuplicatesinStringII();
+//        System.out.println(r.removeDuplicatesStack("deeedbbcccbdaa",3));
+
+//        RemoveExtraSpaceFromAString r = new RemoveExtraSpaceFromAString();
+//        System.out.println(r.RemoveExtraSpace("   Hello Geeks . Welcome   to  GeeksforGeeks   .    "));
+
+//        DetermineIfOneStringIsAnotherSubstring d = new DetermineIfOneStringIsAnotherSubstring();
+//        System.out.println(d.solution("for","geeksforgeeks"));
+//        System.out.println(d.solution("practice","geeksforgeeks"));
+
+//        ReverseWordsInString r = new ReverseWordsInString();
+//        System.out.println(r.reverseWords("the sky is blue"));
+
+//        StringReplace stringReplace = new StringReplace();
+//        System.out.println(stringReplace.replace("dodododo","dod","a"));
+
+//        DecodeString d = new DecodeString();
+//        System.out.println(d.decodeString2Stack("3[a]2[bc]"));
+
+
+//        int[] nums = {1,2,3,4,5,6,7,8};
+//        ReorderArray r = new ReorderArray();
+//        System.out.println(Arrays.toString(r.reorder(nums)));
+
+//        LongestSubstringWithoutRepeatingCharacters l = new LongestSubstringWithoutRepeatingCharacters();
+//        System.out.println(l.lengthOfLongestSubstring("abcabcbb"));
+//        System.out.println(l.lengthOfLongestSubstring("bbbbb"));
+//        System.out.println(l.lengthOfLongestSubstring("pwwkew"));
+//        System.out.println(l.lengthOfLongestSubstring(""));
+
+//        List<List<Integer>> ranges = new ArrayList<>();
+//        ranges.add(List.of(1,5));
+//        ranges.add(List.of(1,6));
+////        System.out.println(Container.numberOfItems("|**|*|*",List.of(1,1),List.of(5,6)));
+////        System.out.println(Container.numberOfItems("*|**|*|*",List.of(1,2),List.of(6,7)));
+//        System.out.println(ItemsInContainers.numberOfItems("*|*|**|*",List.of(0,2),List.of(6,7)));
+
+
+//        System.out.println( AlgorithmSwap.numberOfSwapsToSort(new int[]{2,1,1,0}));
+
+
+//        System.out.println(AudibleGroups.findCircleNum(new String[] {"1100","1110","0110","0001"}));
+
+//        System.out.println(Arrays.toString(OptimizingBoxWeights.optimizingBoxWeights(new int[]{4,2,5,1,6})));
+//        System.out.println(Arrays.toString(OptimizingBoxWeights.optimizingBoxWeights(new int[]{5,3,2,4,1,2})));
+//        System.out.println(Arrays.toString(OptimizingBoxWeights.optimizingBoxWeights(new int[]{5,3,2,4,1,5})));
+
+//        int[][] edges = new int[][] {{1,2},{1,3},{2,4},{3,5},{7,8}};
+//        System.out.println(CloudFrontCaching.set(10,edges));
+
+//        List<int[]> result = PrimeAir.getOptimalRoute(5000,new int[][]{ {1, 2000}, {2, 3000}, {3, 4000} },new int[][]{ { 1, 5000 }, {2, 3000} });
+//        System.out.println(result);
+
+
+//        int[] a = {2,3}, b = {4}, c = {2,3}, d = {1,2};
+//        int k = 10;
+//        System.out.println(shoppingOptions.solve(a, b, c, d, k));
+
+//        System.out.println(StorageOptimization.storage(6,6,new int[]{4},new int[]{2}));
+//        System.out.println(StorageOptimization.storage(3,2,new int[]{1,2,3},new int[]{1,2}));
+//        System.out.println(StorageOptimization.storage(2,2,new int[]{1},new int[]{2}));
+
+//        List<String> list = TransactionLogs.getUserIds(List.of("345366 89921 45","029323 38239 23","38239 345366 15","029323 38239 77","345366 38239 23","029323 345366 13","38239 38239 23"),3);
+//        System.out.println(list);
+
+
+//        System.out.println(eliminateVowel.solution("hello"));.
+
+//        System.out.println(utilization.finalInstances(1,new int[]{25, 23, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 76, 80}));
+
+//        System.out.println(Turnstile.getTimes(9,new int[]{1, 1, 3, 3, 4, 5, 6, 7, 7},new int[]{1, 1, 0, 0, 0, 1, 1, 1, 1}));
+        System.out.println(Turnstile.getTimes(5,new int[]{0, 0, 1, 3, 10},new int[]{0,1,1,1,0}));
+
     }
 }
+
+
